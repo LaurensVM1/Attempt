@@ -18,7 +18,7 @@ static Attempt<int> Divide(int a, int b)
     return Attempt<int>.Ok(a / b);
 }
 
-## Synchronous example
+// Synchronous example
 Attempt<int> result = Divide(8, 0);
 
 if (result.Failed)
@@ -26,7 +26,7 @@ if (result.Failed)
 else
     Console.WriteLine(result.Value);
 
-## Asynchronous example
+// Asynchronous example
 var result = await Attempt<User>.AttemptAsync(async () =>
 {
     return await LoadUserAsync(userId);
