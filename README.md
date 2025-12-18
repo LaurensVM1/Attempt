@@ -1,10 +1,6 @@
 # Attempt
 Attempt is a lightweight, Go-inspired result type that lets you handle success and failure explicitly
 
-# Attempt
-
-**Explicit, Go-style error handling for C#**
-
 `Attempt<T>` represents the result of an operation that can either succeed with a value or fail with an error — without using exceptions for control flow.
 
 ```csharp
